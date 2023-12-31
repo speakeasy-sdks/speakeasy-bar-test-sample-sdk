@@ -1,14 +1,39 @@
 configVersion: 1.0.0
+management:
+  docChecksum: 5fa7e0c88f526d37d5ff49917d1c5693
+  docVersion: v2023.10.0
+  speakeasyVersion: 1.129.1
+  generationVersion: 2.223.3
 generation:
-  comments:
-    disableComments: false
-    omitDescriptionIfSummaryPresent: false
-  baseServerURL: ""
+  comments: {}
   sdkClassName: Risk-Cloud-API
-  singleTagPerOp: false
-  tagNamespacingDisabled: false
+  repoURL: https://github.com/speakeasy-sdks/speakeasy-bar-test-sample-sdk.git
+  usageSnippets:
+    optionalPropertyRendering: withExample
+  baseServerURL: ""
+  fixes:
+    nameResolutionDec2023: false
+features:
+  php:
+    core: 3.2.1
+    globalSecurity: 2.81.2
+    globalServerURLs: 2.82.1
+    methodSecurity: 2.82.0
+    nameOverrides: 2.81.1
 php:
-  version: 0.0.1
+  version: 0.1.0
+  imports:
+    option: openapi
+    paths:
+      callbacks: Models/Callbacks
+      errors: Models/Errors
+      operations: Models/Operations
+      shared: Models/Components
+      webhooks: Models/Webhooks
+  inputModelSuffix: input
+  installationURL: https://github.com/speakeasy-sdks/speakeasy-bar-test-sample-sdk
   maxMethodParams: 0
   namespace: speakeasy_bar-test\Risk-Cloud-API
+  outputModelSuffix: output
   packageName: speakeasy-bar-test/risk-cloud-api
+  repoSubDirectory: .
