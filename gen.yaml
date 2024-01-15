@@ -1,14 +1,23 @@
-configVersion: 1.0.0
+configVersion: 2.0.0
 generation:
-  comments:
-    disableComments: false
-    omitDescriptionIfSummaryPresent: false
-  baseServerURL: ""
   sdkClassName: Risk-Cloud-API
-  singleTagPerOp: false
-  tagNamespacingDisabled: false
+  usageSnippets:
+    optionalPropertyRendering: withExample
+  fixes:
+    nameResolutionDec2023: false
+  baseServerURL: ""
 php:
-  version: 0.0.1
+  version: 0.1.0
+  imports:
+    option: openapi
+    paths:
+      callbacks: Models/Callbacks
+      errors: Models/Errors
+      operations: Models/Operations
+      shared: Models/Components
+      webhooks: Models/Webhooks
+  inputModelSuffix: input
   maxMethodParams: 0
   namespace: speakeasy_bar-test\Risk-Cloud-API
+  outputModelSuffix: output
   packageName: speakeasy-bar-test/risk-cloud-api
